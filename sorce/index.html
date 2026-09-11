@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Music Player</title>
+
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="music-player">
+
+        <!-- Music -->
+        <audio class="music" src="/musics/Billie Eilish - WILDFLOWER (128).mp3"></audio>
+
+        <!-- Cover -->
+        <div class="music-cover">
+            <img src="/image/wildflower.jpg" alt="Music Cover">
+        </div>
+
+        <!-- Music Info -->
+        <div class="music-info">
+            <h2 class="music-title"></h2>
+            <p class="music-artist"></p>
+        </div>
+
+        <!-- Progress -->
+        <div class="progress-container">
+
+            <span class="current-time">0:00</span>
+
+            <input type="range" class="progress" value="0" min="0" max="100">
+
+            <span class="duration">0:00</span>
+
+        </div>
+
+        <!-- Controls -->
+        <div class="controls">
+
+            <!-- 10 Seconds Back -->
+            <button class="ten-sec-back">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+
+            <!-- Previous -->
+            <button class="previous">
+                <i class="fa-solid fa-backward-step"></i>
+            </button>
+
+            <!-- Play / Pause -->
+            <button class="play play-btn">
+                <i class="play-icon fa-solid fa-play"></i>
+            </button>
+
+            <!-- Next -->
+            <button class="next">
+                <i class="fa-solid fa-forward-step"></i>
+            </button>
+
+            <!-- 10 Seconds Forward -->
+            <button class="ten-sec-forward">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+        </div>
+
+        <!-- Volume -->
+        <div class="volume-container">
+
+            <i class="fa-solid fa-volume-low"></i>
+
+            <input type="range" class="volume" value="100" min="0" max="100">
+
+            <i class="fa-solid fa-volume-high"></i>
+
+        </div>
+
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+
+</html>

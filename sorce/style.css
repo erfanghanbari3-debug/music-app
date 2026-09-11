@@ -1,0 +1,185 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #101010;
+
+    font-family: Arial, sans-serif;
+}
+
+/* Music Player */
+
+.music-player {
+    width: 380px;
+
+    padding: 30px;
+
+    border-radius: 24px;
+
+    background-color: #181818;
+
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+    color: white;
+}
+
+/* Cover */
+
+.music-cover {
+    width: 100%;
+    height: 320px;
+
+    overflow: hidden;
+
+    border-radius: 18px;
+
+    margin-bottom: 25px;
+}
+
+.music-cover img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+}
+
+/* Music Info */
+
+.music-info {
+    text-align: center;
+
+    margin-bottom: 25px;
+}
+
+.music-title {
+    font-size: 22px;
+
+    margin-bottom: 8px;
+}
+
+.music-artist {
+    color: #999;
+
+    font-size: 14px;
+}
+
+/* Progress */
+
+.progress-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 25px;
+}
+
+.current-time,
+.duration {
+    width: 35px;
+
+    font-size: 12px;
+
+    color: #999;
+}
+
+.duration {
+    text-align: right;
+}
+
+.progress {
+    flex: 1;
+
+    height: 4px;
+
+    cursor: pointer;
+
+    accent-color: #ffffff;
+}
+
+/* Controls */
+
+.controls {
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    gap: 30px;
+
+    margin-bottom: 30px;
+}
+
+.controls button {
+    border: none;
+
+    background: none;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 20px;
+}
+
+.controls .play {
+    width: 55px;
+    height: 55px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 50%;
+
+    background-color: white;
+
+    color: #181818;
+
+    font-size: 18px;
+
+    transition: 0.2s;
+}
+
+.controls .play:hover {
+    transform: scale(1.08);
+}
+
+.controls button:not(.play):hover {
+    color: #aaa;
+}
+
+/* Volume */
+
+.volume-container {
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    color: #999;
+}
+
+.volume-container i {
+    font-size: 14px;
+}
+
+.volume {
+    flex: 1;
+
+    height: 4px;
+
+    cursor: pointer;
+
+    accent-color: white;
+}
